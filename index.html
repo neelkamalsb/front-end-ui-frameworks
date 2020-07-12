@@ -99,15 +99,134 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
+                <!-- <div class="col-12 col-sm-3 align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a role="button" class="btn btn-block btn-warning"
+                       href="index.html#registerCard">Reserve a Table</a>
+                </div> -->
                 <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
                     <a role="button" class="btn btn-block btn-warning"
-                       data-toggle="tooltip" data-html="true"
-                       title="or Call us at <br><strong>+852 12345678</strong>"
-                       data-placement="bottom"
-                       href="index.html#registerCard">Reserve a Table</a>
+                       data-toggle="modal" data-target="#reserveModal">Reserve a Table</a>
+                </div>
+                
+            </div>
+        </div>
+        <div id="reserveModal" class="modal fade text-black" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header bg-yellow">
+                        <h4 class="modal-title text-white">Reserve a Table</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                                <div class="row form-group">
+                                    <div class="col-12 col-md-2">Number of Guests</div>
+                                    <div class="col-2 col-md-1">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input"
+                                            name="radio1" id="radio1">
+                                            <label for="radio1" class="form-check-label">
+                                                1
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-2 col-md-1">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input"
+                                            name="approve" id="approve">
+                                            <label for="approve" class="form-check-label">
+                                                2
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-1">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input"
+                                            name="approve" id="approve">
+                                            <label for="approve" class="form-check-label">
+                                                3
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-1">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input"
+                                            name="approve" id="approve">
+                                            <label for="approve" class="form-check-label">
+                                                4
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-2 col-md-1">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input"
+                                            name="approve" id="approve">
+                                            <label for="approve" class="form-check-label">
+                                                4
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-md-1">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input"
+                                            name="approve" id="approve">
+                                            <label for="approve" class="form-check-label">
+                                                6
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group row">
+                                    <label for="smoking" class="col-12 col-md-2 col-form-label">Section</label>
+                                    <div class="col-12 col-md-6 btn-group" role="group">
+                                        <button class="btn btn-success active" type="radio">Non-Smoking</button>
+                                        <button class="btn btn-danger" type="radio">Smoking</button>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="date" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                    <div class="col-12 col-md-3">
+                                        <input class="form-control" type="date" id="date" name="date" placeholder="Date">
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <input class="form-control" type="time" id="date" name="date" placeholder="Time">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label for="date" class="col-12 col-md-2 col-form-label"></label>
+                                    <div class="col-2 col-md-1 mr-3">
+                                        <button type="submit" class="btn btn-secondary" data-dismiss="modal">
+                                            Cancel
+                                        </button>
+        
+                                    </div>
+                                    <div class="col-2 col-md-1">
+                                        <button type="submit" class="btn btn-primary">
+                                            Register
+                                        </button>
+                                    </div>
+                                    
+                                </div>
+                                
+                                
+                                
+                            
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -364,11 +483,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        }) 
-    </script>
 </body>
 
 </html>
